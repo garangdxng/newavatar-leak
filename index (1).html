@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Avatar Leak</title>
+    <meta name="description" content="Official access page for Avatar Leak." />
+    <meta property="og:title" content="Avatar Leak" />
+    <meta property="og:description" content="Get Access" />
+    <meta name="theme-color" content="#09111b" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-glow glow-left"></div>
+    <div class="page-glow glow-right"></div>
+
+    <header class="site-header">
+      <div class="container nav-row">
+        <a class="brand" href="./index.html">Avatar Leak</a>
+        <a class="nav-cta" href="https://buy.stripe.com/fZudRa0E5ecec21egx6AM0j" target="_blank" rel="noopener noreferrer">Get Access</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-section">
+        <div class="container hero-shell">
+          <div class="hero-copy">
+            <div class="eyebrow">Private release</div>
+            <h1>Avatar Leak</h1>
+            <p class="hero-subtext">
+              Clean instant access, premium presentation, and a frictionless path from first click to checkout.
+            </p>
+
+            <div class="stat-row">
+              <div class="stat-pill">Full HD</div>
+              <div class="stat-pill">Feature runtime</div>
+              <div class="stat-pill">Instant access</div>
+            </div>
+
+            <div class="offer-card">
+              <div>
+                <span class="offer-label">Limited access window</span>
+                <div class="countdown" id="countdown">10:00</div>
+              </div>
+              <a class="primary-btn" href="https://buy.stripe.com/fZudRa0E5ecec21egx6AM0j" target="_blank" rel="noopener noreferrer">Get Access</a>
+            </div>
+
+            <div class="trust-row">
+              <span>Secure checkout</span>
+              <span>Mobile ready</span>
+              <span>Fast redirect</span>
+            </div>
+          </div>
+
+          <div class="hero-media-panel">
+            <a class="media-card" href="https://buy.stripe.com/fZudRa0E5ecec21egx6AM0j" target="_blank" rel="noopener noreferrer" aria-label="Get access to Avatar Leak">
+              <div class="media-header">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="media-frame">
+                <img src="./hero-frame.jpeg" alt="Avatar Leak preview frame" class="hero-image" />
+                <div class="media-overlay"></div>
+                <div class="play-badge">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M8 6.5v11l9-5.5-9-5.5Z" fill="currentColor"></path>
+                  </svg>
+                </div>
+                <div class="time-chip">98:51</div>
+                <div class="player-chrome">
+                  <div class="progress-track"><span class="progress-fill"></span></div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="proof-section">
+        <div class="container proof-grid">
+          <div class="proof-copy">
+            <div class="eyebrow soft">Viewer feedback</div>
+            <h2>Clean checkout. Instant access. Strong first impression.</h2>
+            <p>
+              Built to feel polished and trustworthy at every step, with a lighter layout, better spacing, and a sharper premium look.
+            </p>
+          </div>
+          <div class="proof-rating">
+            <div class="rating-value">5.0</div>
+            <div class="rating-stars">★★★★★</div>
+            <div class="rating-label">from recent viewers</div>
+          </div>
+        </div>
+
+        <div class="container carousel-shell">
+          <div class="reviews-track" id="reviewsTrack">
+            <article class="review-card"><div class="review-stars">★★★★★</div><p>Got it.</p><span>Marcus W.</span></article>
+            <article class="review-card"><div class="review-stars">★★★★★</div><p>Worked amazing and beautiful quality.</p><span>Jalen R.</span></article>
+            <article class="review-card"><div class="review-stars">★★★★★</div><p>Super smooth and looked clean.</p><span>Derrick T.</span></article>
+            <article class="review-card"><div class="review-stars">★★★★★</div><p>Instant access. No issues at all.</p><span>Chris M.</span></article>
+            <article class="review-card"><div class="review-stars">★★★★★</div><p>Very clean site and easy process.</p><span>Tyrese N.</span></article>
+            <article class="review-card"><div class="review-stars">★★★★★</div><p>Beautiful quality.</p><span>Zion H.</span></article>
+            <article class="review-card"><div class="review-stars">★★★★★</div><p>Got access right away.</p><span>Aaron D.</span></article>
+            <article class="review-card"><div class="review-stars">★★★★★</div><p>Worked first try.</p><span>Jordan K.</span></article>
+            <article class="review-card"><div class="review-stars">★★★★★</div><p>Really polished and trustworthy.</p><span>Malik S.</span></article>
+            <article class="review-card"><div class="review-stars">★★★★★</div><p>Amazing and beautiful quality.</p><span>Elijah P.</span></article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-row">
+        <span>© <span id="year"></span> Avatar Leak</span>
+        <a href="https://buy.stripe.com/fZudRa0E5ecec21egx6AM0j" target="_blank" rel="noopener noreferrer">Get Access</a>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+
+      let remaining = 10 * 60;
+      const countdownEl = document.getElementById('countdown');
+      const updateCountdown = () => {
+        const mins = String(Math.floor(remaining / 60)).padStart(2, '0');
+        const secs = String(remaining % 60).padStart(2, '0');
+        countdownEl.textContent = `${mins}:${secs}`;
+        remaining = remaining > 0 ? remaining - 1 : 10 * 60;
+      };
+      updateCountdown();
+      setInterval(updateCountdown, 1000);
+
+      const track = document.getElementById('reviewsTrack');
+      track.innerHTML += track.innerHTML;
+    </script>
+  </body>
+</html>
